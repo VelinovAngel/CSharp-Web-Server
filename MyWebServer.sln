@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebServer.App", "MyWebSer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebServer", "MyWebServer\MyWebServer.csproj", "{7DBDA0C8-6A18-4F46-9496-4292F53E9BA2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{4E30554E-BDBC-4C79-93E3-1D88806ADE50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleCards", "App\BattleCards\BattleCards.csproj", "{AD6E6461-5F8B-4EBE-A64B-1E9842AF24A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,16 @@ Global
 		{7DBDA0C8-6A18-4F46-9496-4292F53E9BA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DBDA0C8-6A18-4F46-9496-4292F53E9BA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DBDA0C8-6A18-4F46-9496-4292F53E9BA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD6E6461-5F8B-4EBE-A64B-1E9842AF24A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD6E6461-5F8B-4EBE-A64B-1E9842AF24A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD6E6461-5F8B-4EBE-A64B-1E9842AF24A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD6E6461-5F8B-4EBE-A64B-1E9842AF24A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AD6E6461-5F8B-4EBE-A64B-1E9842AF24A0} = {4E30554E-BDBC-4C79-93E3-1D88806ADE50}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9218E3C-82C9-46BF-8569-4C5DC669BB3B}
