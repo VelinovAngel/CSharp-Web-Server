@@ -36,7 +36,7 @@
         }
 
         private HttpServer(IRoutingTable routingTable)
-            : this(5000, routingTable)
+            : this(80, routingTable)
         {
         }
 
@@ -129,7 +129,7 @@
             if (request.Session.IsNew)
             {
                 response.Cookies.Add(HttpSession.SessionCookieName, request.Session.Id);
-                
+
                 request.Session.IsNew = false;
             }
         }

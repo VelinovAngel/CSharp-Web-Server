@@ -1,12 +1,10 @@
-﻿namespace MyWebServer.App
-{
-    using System.Threading.Tasks;
-    using MyWebServer;
-    using MyWebServer.Controllers;
-    using MyWebServer.App.Controllers;
-    using MyWebServer.App.Data;
-    using MyWebServer.Results.Views;
+﻿using System.Threading.Tasks;
+using MyWebServer.App.Controllers;
+using MyWebServer.Controllers;
+using MyWebServer.Results.Views;
 
+namespace MyWebServer.App
+{
     public class Startup
     {
         public static async Task Main()
@@ -14,10 +12,9 @@
                 .WithRoutes(routes => routes
                     .MapStaticFiles()
                     .MapControllers()
-                    .MapGet<HomeController>("/ToCats", c => c.LocalRedirect()))
+                .MapGet<UsersController>("/Users/Login", c=>c.Login()))
                 .WithServices(services => services
-                    .Add<IViewEngine, CompilationViewEngine>()
-                    .Add<IData, MyDbContext>())
+                    .Add<IViewEngine, CompilationViewEngine>())
                 .Start();
     }
 }
